@@ -3,9 +3,9 @@ import Nav from "./Nav";
 
 export default function Header() {
     return (
-        <div className="header">
+        <header>
             <Link to="/"><h1>iStocks</h1></Link>
             <Nav />
-        </div>
+        </header>
     )
 };

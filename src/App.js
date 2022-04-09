@@ -16,5 +16,5 @@ export default function App() {
                 <Route path="/stocks/:symbol" element={<Stock/>}></Route>
             </Routes>
         </div>
-    )
+    );
 };

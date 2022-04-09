@@ -1,5 +1,8 @@
 export default function Home() {
     return (
-        <h1>About Page</h1>
+        <main>
+            <h1>About Page</h1>
+            <p>Created by Best Team Teo Group 4</p>
+        </main>
     )
 };

@@ -6,7 +6,7 @@ export default function Stocks(props) {
 
 
     return (
-        <div>
+        <main>
             <h1>Stocks Page</h1>
                 <ul>
                     {
@@ -18,6 +18,6 @@ export default function Stocks(props) {
                         })
                     }
                 </ul>
-        </div>
+        </main>
     );
 };
