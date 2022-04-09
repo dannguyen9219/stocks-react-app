@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-// import stocksData from "../data";
 
 
 export default function Stock(props) {
@@ -9,15 +8,6 @@ export default function Stock(props) {
     const symbol = params.symbol;
     const URL = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${apiKey}`;
     const [stock, setStock] = useState({});
-    
-    // const getStock = async () => {
-    //     try {
-    //         const data = await stocksData.find(s => s.symbol === symbol)
-    //         setStock(data)
-    //     }   catch(err) {
-    //         console.log(err)
-    //     }
-    // };
 
     const getStock = async() => {
         try {
@@ -32,19 +22,6 @@ export default function Stock(props) {
     useEffect(() => {
         getStock()
     }, []);
-
-
-    // return (
-    //     <main className="stock-page">
-    //         <div>
-    //             <h1>{stock.name}</h1>
-    //             <h2>Current Price: {stock.lastPrice}</h2>
-    //             <h2>Change: {stock.change}</h2>
-    //             <h2>Daily High: {stock.high}</h2>
-    //             <h2>Daily Low{stock.low}</h2>
-    //         </div>
-    //     </main>
-    // );
 
     const loaded = () => {
         return (
