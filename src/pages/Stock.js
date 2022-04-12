@@ -26,12 +26,13 @@ export default function Stock(props) {
     const loaded = () => {
         return (
             <main>
-                <div>
+                <div className="container">
                     <h1>{stock.name}</h1>
                     <h1>USD {stock.price}</h1>
                     <h2>Change: {stock.change.toFixed(2)}</h2>
                     <h2>Daily High: {stock.dayHigh}</h2>
                     <h2>Daily Low: {stock.dayLow}</h2>
+                    <h2>Volume: {stock.volume}</h2>
                 </div>
             </main>
         )
